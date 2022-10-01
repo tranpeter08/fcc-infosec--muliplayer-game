@@ -1,16 +1,20 @@
-class Collectible {
-  constructor({x, y, value, id}) {
+const collectibleSize = 20;
 
+class Collectible {
+  constructor({ x, y, value = 1, id }) {
+    this.x = x;
+    this.y = y;
+    this.value = value;
+    this.id = id;
   }
 
+  /**
+   *
+   * @param {Axis} axis
+   */
+  maxAxis(axis) {
+    return this[axis] + collectibleSize;
+  }
 }
-
-/*
-  Note: Attempt to export this for use
-  in server.js
-*/
-try {
-  module.exports = Collectible;
-} catch(e) {}
 
 export default Collectible;

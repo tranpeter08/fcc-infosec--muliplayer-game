@@ -1,0 +1,10 @@
+const emitCodes = {
+  PLAYER_MOVE: 'PLAYER_MOVE',
+  CONNECTED: 'CONNECTED',
+  PLAYER_DISCONNECT: 'PLAYER_DISCONNECT',
+  COLLISION: 'COLLISION',
+  JOINED: 'JOINED',
+  SCORED: 'SCORED',
+};
+
+module.exports = { emitCodes };
